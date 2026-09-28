@@ -225,6 +225,50 @@
             max-width: 680px;
             margin-bottom: 32px;
         }
+        /* Hero Side-by-Side Layout */
+.hero-top-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 48px;
+    margin-bottom: 40px;
+}
+
+.hero-text-col {
+    flex: 1;
+    max-width: 680px;
+}
+
+.hero-img-col {
+    flex: 0 0 260px;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-profile-img {
+    width: 260px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #FFFFFF;
+    box-shadow: var(--shadow-lg);
+}
+
+/* Mobile responsive stack */
+@media (max-width: 900px) {
+    .hero-top-row {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+    .hero-img-col {
+        margin-bottom: 24px;
+        align-self: flex-start;
+    }
+    .hero-profile-img {
+        width: 180px;
+        height: 180px;
+    }
+}
 
         /* Metric Highlights Band */
         .stat-grid {
@@ -724,15 +768,22 @@
 
     <main>
         <!-- Hero Section -->
-        <section id="hero" class="hero">
-            <div class="container">
+      <!-- Hero Section -->
+<section id="hero" class="hero">
+    <div class="container">
+        
+        <!-- Top Row: Text on Left, Image on Right -->
+        <div class="hero-top-row">
+            
+            <!-- Left Side Text -->
+            <div class="hero-text-col">
                 <div class="badge-pill">
                     <i data-lucide="sparkles" style="width: 14px; height: 14px; color: var(--accent);"></i>
-                    MSc Business Analytics & Decision Science · University of Leeds
+                    MSc Business Analytics & Decision Science · Univ. of Leeds
                 </div>
-                <h1>Translating complex datasets into actionable strategy.</h1>
+                <h1>Translating complex datasets into actionable strategy & revenue growth.</h1>
                 <p class="lead">
-                    Business & Data Analyst with hands-on expertise across Excel, SQL, Python, and Power BI. Experienced in audit accuracy, multi-model time-series forecasting, and regression modeling.
+                    Business & Data Analyst with hands-on expertise across Excel, SQL, Python, and Power BI. Experienced in audit accuracy, multi-model time-series forecasting, and econometric regression modeling.
                 </p>
                 <div style="display: flex; gap: 12px; flex-wrap: wrap;">
                     <a href="#projects" class="btn btn-primary">
@@ -740,12 +791,18 @@
                         <i data-lucide="arrow-down" style="width: 16px; height: 16px;"></i>
                     </a>
                     <button class="btn btn-secondary" onclick="copyEmail()">
-                        <i data-lucide="copy" style="width: 16px; height: 16px;"></i>
+                        <i data-lucide="copy" style="width: 16px; height: 16px; color: #0F172A;"></i>
                         Copy Email
                     </button>
                 </div>
- 
             </div>
+
+            <!-- Right Side Image -->
+            <div class="hero-img-col">
+                <img src="images/IMG-20251016-WA0037~5.jpg" alt="Harshal John Robson" class="hero-profile-img" />
+            </div>
+
+        </div>
         </section>
 
         <!-- Projects Section (Full-Width Rectangles) -->
