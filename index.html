@@ -730,9 +730,9 @@
                     <i data-lucide="sparkles" style="width: 14px; height: 14px; color: var(--accent);"></i>
                     MSc Business Analytics & Decision Science · Univ. of Leeds
                 </div>
-                <h1>Translating complex datasets into actionable strategy & revenue growth.</h1>
+                <h1>Translating complex datasets into actionable strategy.</h1>
                 <p class="lead">
-                    Business & Data Analyst with hands-on expertise across Excel, SQL, Python, and Power BI. Experienced in audit accuracy, multi-model time-series forecasting, and econometric regression modeling.
+                    Business & Data Analyst with hands-on expertise across Excel, SQL, Python, and Power BI. Experienced in audit accuracy, multi-model time-series forecasting, and regression modeling.
                 </p>
                 <div style="display: flex; gap: 12px; flex-wrap: wrap;">
                     <a href="#projects" class="btn btn-primary">
@@ -754,17 +754,43 @@
                 <div class="section-header">
                     <div class="section-title">
                         <h2>Featured Analytics Projects</h2>
-                        <p>End-to-end econometric models, ML pipelines, and business intelligence dashboards</p>
+                        <p>End-to-end Forecasting models, ML pipelines, and business intelligence dashboards</p>
                     </div>
                     <div class="filter-group">
                         <button class="filter-btn active" onclick="filterProjects('all')">All Work</button>
-                        <button class="filter-btn" onclick="filterProjects('forecasting')">Econometrics</button>
+                        <button class="filter-btn" onclick="filterProjects('forecasting')">Forecasting</button>
                         <button class="filter-btn" onclick="filterProjects('ml')">ML & NLP</button>
                         <button class="filter-btn" onclick="filterProjects('bi')">BI & Decision</button>
                     </div>
                 </div>
 
                 <div class="project-feed">
+                   <!-- Project 1: Power bi startup dashboard -->
+                     <article class="project-card" data-category="bi">
+                        <div class="project-media">
+                            <img src="images/universal exports.png" alt="Universal Exports performance report" onerror="this.onerror=null; this.parentElement.innerHTML='<div style=\'padding:20px;text-align:center;color:#64748B;font-weight:600;\'>Sales & Performance Analytics Report</div>';">
+                        </div>
+                        <div class="project-content">
+                            <div>
+                                <div class="project-meta-row">
+                                    <span class="tag-category">Business Intelligence</span>
+                                </div>
+                                <h3 class="project-title">Performance Analysis: Indian StartupsK</h3>
+                                <p class="project-summary">
+                                    Comprehensive analysis of revenue and profit across product lines and monthly sales cycles. Delivered strategic recommendations on market diversification, sales team efficiency, and customer acquisition.
+                                </p>
+                                <div class="tech-pill-list">
+                                    <span class="tech-pill">Power BI</span>
+                                    <span class="tech-pill">Data Analysis</span>
+                                    <span class="tech-pill">Interactive Dashboard</span>
+                                    <span class="tech-pill">Excel</span>
+                                </div>
+                            </div>
+                            <a href="https://github.com/hjr0001/Portfoliwebsite/blob/main/assets/Universal-Exports-A-Thriving-Clothing-Powerhouse.pdf" target="_blank" rel="noopener noreferrer" class="project-cta">
+                                View Technical Report <i data-lucide="external-link" style="width: 15px; height: 15px;"></i>
+                            </a>
+                        </div>
+                    </article>
                     <!-- Project 1: Universal Exports -->
                     <article class="project-card" data-category="bi">
                         <div class="project-media">
@@ -777,7 +803,7 @@
                                 </div>
                                 <h3 class="project-title">Performance Analysis: Universal Exports UK</h3>
                                 <p class="project-summary">
-                                    Comprehensive analysis of £1.04bn in revenue and £447m profit across product lines and monthly sales cycles. Delivered strategic recommendations on market diversification, sales team efficiency, and customer acquisition.
+                                    Comprehensive analysis of revenue and profit across product lines and monthly sales cycles. Delivered strategic recommendations on market diversification, sales team efficiency, and customer acquisition.
                                 </p>
                                 <div class="tech-pill-list">
                                     <span class="tech-pill">Power BI</span>
@@ -795,12 +821,12 @@
                     <!-- Project 2: US PCE Time-Series Forecasting -->
                     <article class="project-card" data-category="forecasting">
                         <div class="project-media">
-                            <img src="images/Designer (6).png" alt="Forecasting US Personal Consumption Expenditure" onerror="this.onerror=null; this.parentElement.innerHTML='<div style=\'padding:20px;text-align:center;color:#64748B;font-weight:600;\'>Time-Series Econometrics</div>';">
+                            <img src="images/Designer (6).png" alt="Forecasting US Personal Consumption Expenditure" onerror="this.onerror=null; this.parentElement.innerHTML='<div style=\'padding:20px;text-align:center;color:#64748B;font-weight:600;\'>Time-Series Forecasting</div>';">
                         </div>
                         <div class="project-content">
                             <div>
                                 <div class="project-meta-row">
-                                    <span class="tag-category">Econometrics</span>
+                                    <span class="tag-category">Forecasting</span>
                                 </div>
                                 <h3 class="project-title">Forecasting US Personal Consumption Expenditure (PCE)</h3>
                                 <p class="project-summary">
@@ -811,7 +837,7 @@
                                     <span class="tech-pill">ARIMA</span>
                                     <span class="tech-pill">Holt's Linear</span>
                                     <span class="tech-pill">Time-Series</span>
-                                    <span class="tech-pill">Econometrics</span>
+                                    <span class="tech-pill">Forecasting</span>
                                 </div>
                             </div>
                             <a href="https://github.com/hjr0001/Portfoliwebsite/blob/main/assets/Forecasting-US-Personal-Consumption-Expenditure.pdf" target="_blank" rel="noopener noreferrer" class="project-cta">
@@ -859,10 +885,10 @@
                                 </div>
                                 <h3 class="project-title">Customer Sentiment & Feedback Mining</h3>
                                 <p class="project-summary">
-                                    AI-driven sentiment analysis classifying review polarity and identifying customer friction points. Features automated text tokenization, keyword clustering, and visual trend breakdowns.
+                                 Sentiment analysis classifying review polarity and identifying customer friction points. Features automated text tokenization, keyword clustering, and visual trend breakdowns.
                                 </p>
                                 <div class="tech-pill-list">
-                                    <span class="tech-pill">Python</span>
+                                    <span class="tech-pill">R</span>
                                     <span class="tech-pill">NLP Libraries</span>
                                     <span class="tech-pill">Text Mining</span>
                                     <span class="tech-pill">Data Pipelines</span>
@@ -947,7 +973,7 @@
                             <div class="timeline-role">MSc, Business Analytics & Decision Science</div>
                             <div class="timeline-company">University of Leeds, United Kingdom · Grade: 2:1</div>
                             <p class="timeline-desc">
-                                Specialized in predictive analytics, econometrics, statistical modeling, operational research, and decision-support systems.
+                                Specialized in predictive analytics, Forecasting, statistical modeling, operational research, and decision-support systems.
                             </p>
                         </div>
                         <div class="timeline-item">
@@ -990,7 +1016,7 @@
                                 <li>Python (Pandas, NumPy, Scikit-learn)</li>
                                 <li>R (Forecast, Econometrics)</li>
                                 <li>ETL Pipelines & Data Cleansing</li>
-                                <li>NLP & Sentiment Mining</li>
+                                <li>NLP & Sentiment Analysis</li>
                             </ul>
                         </div>
                         <div class="skill-box">
